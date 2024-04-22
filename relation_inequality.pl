@@ -15,7 +15,9 @@ sibling(Sib1,Sib2) :-
 brother(Bro1,Bro2) :-
     son(mother,father), sibling(mother,father).
 sister(Sis1,Sis2) :-
-    daughter(mother,father), sibling
+    daughter(mother,father),
+    sibling(X,Y),
+    female(X).
 cousin(Cousin1,Cousin2) :-
     parent(Parent1,Cousin1),
     parent(Parent2,Cousin2),
