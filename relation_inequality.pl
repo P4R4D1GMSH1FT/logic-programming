@@ -13,10 +13,12 @@ uncle(Uncle,Person) :-
 sibling(Sib1,Sib2) :-
     parent(Parent,Sib1), parent(Parent,Sib2), Sib1 \= Sib2.
 brother(Bro1,Bro2) :-
-    son(mother,father), sibling(mother,father).
+    son(mother,father),
+    sibling(brother,person),
+    male(X).
 sister(Sis1,Sis2) :-
     daughter(mother,father),
-    sibling(X,Y),
+    sibling(sister,person),
     female(X).
 cousin(Cousin1,Cousin2) :-
     parent(Parent1,Cousin1),
