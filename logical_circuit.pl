@@ -1,5 +1,5 @@
-% an inverter is built up from a transistor with the source connected to the
-ground, and a resistor with one end connected to the power source
+% an inverter is built up from a transistor with the source connected to the ground
+% and a resistor with one end connected to the power source
 
 resistor(power,n1).
 resistor(power,n2).
